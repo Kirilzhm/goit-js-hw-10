@@ -1,25 +1,124 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+/* ======== My homework 1  ========*/
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+
+.timer{
+  display: flex;
+  gap: 24px;
+  margin-top: 32px
+};
+
+.field{
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+};
+
+.value{
+font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+};
+
+input{
+border-radius: 4px;
+  width: 272px;
+  height: 40px;
+};
+
+input:hover{
+  border-radius: 4px;
+    background: #fff;
+};
+
+input:active{
+  border: 1px solid #4e75ff;
+    border-radius: 4px;
+};
+
+input:disabled{
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+button[data-start]{
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    background: #4e75ff;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+      border: none;
+  margin-left: 8px
+};
+
+button[data-start]:disabled{
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    background: #cfcfcf;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #989898;
+};
+
+button[data-start]:hover{
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+};
+
+.flatpickr-calendar{
+  border-radius: 8px;
+    padding: 16px;
+    width: 280px;
+    height: 352px;
+  background: #f5f5f5;
+};
+
+.flatpickr-day:active{
+border-radius: 100%;
+  stroke-width: 1px;
+  stroke: #4e75ff;
+};
+
+.flatpickr-day:hover{
+  border-radius: 100%;
+    fill: #c1c1c1;
+};
+
+
+/* ======== My homework 2  ========*/
+
+
+fieldset{
+  width: 360px;
+    height: 78px;
+};
+
+form button{
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    background: #4e75ff;
+};
+form button:hover{
+  background: #6c8cff;
 }
